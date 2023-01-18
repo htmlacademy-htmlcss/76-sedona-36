@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктор Першин](https://up.htmlacademy.ru/htmlcss/36/user/76).
-* Наставник: [Анастасия Титова] (https://htmlacademy.ru/profile/asiatitova)
-
+* Наставник: [Анастасия Титова](https://htmlacademy.ru/profile/asiatitova)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
