@@ -110,7 +110,7 @@
                 <button class="button" type="submit">Применить</button>
               </li>
               <li class="catalog-buttons-item">
-                <button class="catalog-filter-clear" type="submit"> Сбросить </button>
+                <button class="catalog-filter-clear" type="reset"> Сбросить </button>
               </li>
             </ul>
           </form>
@@ -143,11 +143,10 @@
             <span class="hotel-card-price">От 4000 ₽</span>
 
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button-favorite button" type="submit">В Избранное</button>
+            <button class="hotel-card-button-favorite button" type="button">В Избранное</button>
             <p class="stars four-stars">
-              <span class="visually-hidden">4 звезды</span>
+              <img class="stars four-stars" src="#" alt="4 звезды">
             </p>
-            <img class="stars four-stars" src="#" alt="4 звезды">
             <p class="hotel-rating"> Рейтинг: 8.5 </p>
           </li>
           <li class="hotel-card">
@@ -159,12 +158,11 @@
             <span class="hotel-card-price">От 5000 ₽</span>
 
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button-favorite-checked hotel-card-button-favorite button" type="submit">В
+            <button class="hotel-card-button-favorite-checked hotel-card-button-favorite button" type="button">В
               Избранном</button>
             <p class="stars four-stars">
-              <span class="visually-hidden">4 звезды</span>
+              <img class="stars four-stars" src="#" alt="4 звезды">
             </p>
-            <img class="stars four-stars" src="#" alt="4 звезды">
             <p class="hotel-rating"> Рейтинг: 9.2 </p>
           </li>
           <li class="hotel-card">
@@ -176,11 +174,10 @@
             <span class="hotel-card-price">От 2500 ₽</span>
 
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button-favorite button" type="submit">В Избранное</button>
+            <button class="hotel-card-button-favorite button" type="button">В Избранное</button>
             <p class="stars three-stars">
-              <span class="visually-hidden">3 звезды</span>
+              <img class="stars three-stars" src="#" alt="3 звезды">
             </p>
-            <img class="stars three-stars" src="#" alt="3 звезды">
             <p class="hotel-rating"> Рейтинг: 6.9 </p>
           </li>
           <li class="hotel-card">
@@ -192,11 +189,10 @@
             <span class="hotel-card-price">От 1500 ₽</span>
 
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button-favorite button" type="submit">В Избранное</button>
+            <button class="hotel-card-button-favorite button" type="button">В Избранное</button>
             <p class="stars two-stars">
-              <span class="visually-hidden">2 звезды</span>
+              <img class="stars two-stars" src="#" alt="2 звезды">
             </p>
-            <img class="stars two-stars" src="#" alt="2 звезды">
             <p class="hotel-rating"> Рейтинг: 5.0 </p>
           </li>
         </ul>
@@ -224,7 +220,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="newsletter background-color">
+      <section class="newsletter background-color">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -235,8 +231,8 @@
             Подписаться
           </button>
         </form>
-      </div>
-      <section class="footer-social">
+      </section>
+      <section class="footer-contacts" <div class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -255,17 +251,18 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Телефон</h2>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
+        </div>
+        <div class="footer-contacts">
+          <h2 class="visually-hidden">Телефон</h2>
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
 
-      <section class="footer-logo">
-        <h2 class="visually-hidden">Логотип HTML-Academy</h2>
-        <a class="footer-logo-academy" href="https://htmlacademy.ru/">
-          <img class="footer-logo-img" src="#" alt="Логотип HTML-Academy">
-        </a>
+        <div class="footer-logo">
+          <h2 class="visually-hidden">Логотип HTML-Academy</h2>
+          <a class="footer-logo-academy" href="https://htmlacademy.ru/">
+            <img class="footer-logo-img" src="#" alt="Логотип HTML-Academy">
+          </a>
+        </div>
       </section>
 
 
