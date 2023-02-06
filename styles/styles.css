@@ -182,7 +182,7 @@ body {
 
 .newsletter{
   background-image: url("../images/footer-background.jpg");
-  background-color: #000000;
+  background-color: #333333;
   color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -191,6 +191,8 @@ body {
   background-image: url("../images/catalog-images/inner-header.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #333333;
+  color: #FFFFFF;
 }
 .inner-header-title{
   font-size: 60px;
