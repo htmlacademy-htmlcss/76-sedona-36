@@ -46,6 +46,10 @@ body {
   color: #000000;
 
 }
+.navigation-link.button{
+  background-color: #756157;
+  color:#FFFFFF;
+}
 
 .promo {
   background-image: url("../images/index-background.jpg");
