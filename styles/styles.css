@@ -43,17 +43,21 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
-  text-align: left;
   color: #000000;
 
 }
 
-.main-index {
+.promo {
   background-image: url("../images/index-background.jpg");
   background-color:#FFFFFF;
   color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+.advantages-promo{
+  background-color:#FFFFFF;
+  color: #000000;
+
 }
 
 .advantages-header {
@@ -178,4 +182,67 @@ body {
   color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+.catalog{
+  background-image: url("../images/catalog-images/inner-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.inner-header-title{
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.breadcrumbs{
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.breadcrumbs-link{
+  color:inherit;
+}
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.catalog-filter-item{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.hotels-found{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+.hotel-card{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #83B3D3;
+
+}
+.hotel-card-title{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+
+}
+.hotel-card-link{
+  text-decoration: none;
+}
+.hotel-rating{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
 }
