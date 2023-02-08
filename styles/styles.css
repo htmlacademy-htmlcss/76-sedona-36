@@ -75,12 +75,14 @@ body {
   text-align: center;
 
 }
+
+.advantages-item{
+  background-color: #82B3D3;
+}
 .advantages-item-light{
   background-color: rgba(131, 179, 211, 0.2);
 }
-.advantages-item-blue{
-  background-color: #82B3D3;
-}
+
 
 .advantages-item-light-blue{
   background-color: rgba(131, 179, 211, 0.12);
