@@ -36,16 +36,24 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.newsletter-button{
+  background-color:#82B3D3;
+}
+.button-apply{
+  background-color:#82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+}
 .page-header {
   background-color: #FFFFFF;
 
@@ -60,11 +68,29 @@ body {
   text-transform: capitalize;
 
 }
+.hotel-card-button-favorite{
+  background-color:#82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+}
+.hotel-card-button{
+  background-color: #756157;
+  font-size: 16px;
+  line-height: 20px;
+}
+.catalog-filter-clear{
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+  color: #FFFFFF;
+}
 
 .navigation-link.button {
   background-color: #756157;
   color: #FFFFFF;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .promo {
@@ -311,9 +337,9 @@ body {
   color: #000000;
 }
 .pagination-link{
-text-decoration: none;
-color:#FFFFFF;
-}
+  text-decoration: none;
+  color:#FFFFFF;
+  }
 .pagination-current{
   color:#000000;
   background-color: #F2F2F2;
