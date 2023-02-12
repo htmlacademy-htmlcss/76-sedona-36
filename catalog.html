@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -107,10 +108,10 @@
             </fieldset>
             <ul class="catalog-buttons">
               <li class="catalog-buttons-item">
-                <button class="button" type="submit">Применить</button>
+                <button class="button button-apply" type="submit">Применить</button>
               </li>
               <li class="catalog-buttons-item">
-                <button class="catalog-filter-clear" type="reset"> Сбросить </button>
+                <button class="button catalog-filter-clear" type="reset"> Сбросить </button>
               </li>
             </ul>
           </form>
@@ -206,7 +207,7 @@
         </ul>
         <ul class="pagination">
 
-          <li class="pagination-item">
+          <li class="pagination-item pagination-current">
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
@@ -218,21 +219,19 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
-            <span class="pagination-dots">...</span>
+          <li class="pagination-item pagination-dots">
+            <span class="pagination-link-dots">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
-    </main>
-    <footer class="page-footer">
       <section class="newsletter background-color">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
+          <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
             id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
@@ -240,6 +239,8 @@
           </button>
         </form>
       </section>
+    </main>
+    <footer class="page-footer">
       <section class="contacts">
         <div class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
