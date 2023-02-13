@@ -13,6 +13,7 @@
   src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+
 html {
   box-sizing: border-box;
   height: 100%;
