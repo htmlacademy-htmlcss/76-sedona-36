@@ -398,6 +398,7 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 
+
 }
 
 .hotel-card-title {
@@ -450,4 +451,44 @@ body {
 .newsletter-description {
   color: #333333;
   text-align: center;
+}
+
+
+
+.catalog-list-button{
+  display: flex;
+
+
+}
+.catalog-filter-list{
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.catalog-infrastructure{
+  margin-right: 70px;
+}
+.catalog-house{
+  margin-right: 498px;
+}
+.hotels-sorting{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1060px;
+  margin: 0 auto;
+}
+.hotel-list{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+}
+.hotel-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
 }
