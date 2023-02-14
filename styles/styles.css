@@ -322,6 +322,7 @@ body {
   width: 142px;
   margin-right: 236.5px;
   list-style: none;
+  outline: 2px solid red;
 
 }
 
@@ -367,6 +368,10 @@ body {
   color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog {
