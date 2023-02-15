@@ -26,7 +26,6 @@ html {
 }
 
 body {
-  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -309,6 +308,12 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+.interest{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts {
