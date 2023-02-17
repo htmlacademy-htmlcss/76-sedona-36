@@ -32,16 +32,14 @@ body {
   background-color: #F2F2F2;
   color: #000000;
   height: 100%;
+  margin: 0;
 }
 
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
   background: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -51,8 +49,7 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+
 }
 
 .navigation-logo {
@@ -64,6 +61,8 @@ body {
   margin: 0;
   padding: 0;
   width: 507px;
+  display: flex;
+  list-style: none;
 }
 
 .navigation-user {
@@ -239,7 +238,7 @@ body {
 
 .facilities-list {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
   list-style: none;
   padding: 0;
 
@@ -309,7 +308,8 @@ body {
   text-align: center;
   color: #333333;
 }
-.interest{
+
+.interest {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,8 +318,7 @@ body {
 
 .contacts {
   display: flex;
-  width: 1060px;
-  margin: 40px 70px 30px 70px;
+  padding: 40px 70px 30px 70px;
 
 }
 
@@ -334,7 +333,6 @@ body {
 
 .footer-contacts {
   width: 720px;
-  margin-right: 235.5px;
 
 }
 
@@ -452,6 +450,10 @@ body {
   color: #333333;
   text-transform: uppercase;
 }
+.pagination{
+  display: flex;
+  list-style: none;
+}
 
 .pagination-item {
   font-size: 20px;
@@ -515,17 +517,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1060px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0 70px;
 }
 
 .hotel-list {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  width: 1060px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  padding: 0 70px;
+  justify-content: space-between;
 }
 
 .hotel-buttons {
