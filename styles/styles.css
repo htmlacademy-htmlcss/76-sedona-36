@@ -176,6 +176,7 @@ body {
   color: #000000;
   padding-top: 69px;
   padding-bottom: 69px;
+  margin-bottom: 21px;
 
 }
 
@@ -185,6 +186,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0 290px;
+  margin-bottom: 25px;
   padding: 0;
 }
 
@@ -203,6 +205,10 @@ body {
   background-color: #82B3D3;
   width: 400px;
   padding: 85px 112px;
+
+}
+.advantages-item-text{
+padding: 102px 85px;
 
 }
 
@@ -237,6 +243,11 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin:0;
+  padding: 0;
+  margin-left: 274.5px;
+  margin-right: 274.5px;
+
 }
 
 .advantages-description {
@@ -265,6 +276,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 
 }
 
@@ -273,6 +287,12 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding: 0;
+
+}
+.facilities-text{
+padding: 64px 347px;
 
 }
 
@@ -282,6 +302,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 
 
 }
@@ -293,8 +316,9 @@ body {
 }
 
 .facilities-logo {
-  margin-left: 78.5px;
-  margin-right: 76.5px;
+margin-left: 77.5px;
+margin-right: 77.5px;;
+margin-bottom: 30px;
 }
 
 .facilities-item-food {
@@ -315,6 +339,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .interest-description {
@@ -322,6 +349,11 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+
+
 }
 
 .interest {
@@ -329,6 +361,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 96px 304px;
 }
 
 .contacts {
@@ -336,18 +369,29 @@ body {
   padding: 40px 70px 30px 70px;
 
 }
+.footer-social{
 
+  margin-right: 41.5px;
+
+}
 .footer-social-list {
   display: flex;
   width: 142px;
-  margin-right: 236.5px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   outline: 2px solid red;
+
+
+}
+.footer-social-item {
+padding: 12px 13px;
 
 }
 
 .footer-contacts {
   width: 720px;
+  margin-right: 41.5px;
 
 }
 
@@ -361,6 +405,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 
 }
 
@@ -368,16 +415,23 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+  padding-left: 104px;
+  padding-right: 104px;
 
 }
 
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
+  display: block;
   text-align: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 
@@ -391,6 +445,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 96px 258px 104px 258px;
 }
 
 .catalog {
