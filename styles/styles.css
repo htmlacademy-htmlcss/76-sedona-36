@@ -74,9 +74,7 @@ body {
   margin-left: auto;
 }
 
-.navigation-item {
-  padding: 20px 16px;
-}
+
 
 
 .visually-hidden {
@@ -127,9 +125,21 @@ body {
   text-decoration: none;
   color: #000000;
   text-transform: capitalize;
+  padding: 20px 16px;
 
 }
+.navigation-link-user{
+  padding: 22px 12px;
+  outline:#756157 1px solid;
 
+
+}
+.navigation-user .navigation-list {
+  min-width: 20px;
+  min-height: 20px;
+
+
+}
 .hotel-card-button-favorite {
   background-color: #82B3D3;
   font-size: 16px;
@@ -155,6 +165,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 34px;
 }
 
 .promo-logo {
