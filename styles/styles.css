@@ -455,6 +455,7 @@ padding: 12px 13px;
   background-color: #333333;
   color: #FFFFFF;
   padding: 35px 70px 70px 70px;
+
 }
 
 .inner-header-title {
@@ -568,19 +569,24 @@ padding: 17px 16px;
   margin: 0;
   padding:0;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .hotel-buttons {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 340px;
+  width: 300px;
+
 }
 
 .hotel-card {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  outline:#82B3D3 solid 2px;
   background-color: #FFFFFF;
+  padding: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
 
@@ -645,6 +651,8 @@ padding: 17px 16px;
 .pagination {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item {
@@ -653,6 +661,8 @@ padding: 17px 16px;
   font-weight: 700;
   background-color: #82B3D3;
   text-transform: uppercase;
+  margin-right: 8px;
+  padding: 12px 24px;
 
 }
 
