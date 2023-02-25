@@ -208,9 +208,8 @@ body {
 
 .advantages-list {
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -218,7 +217,7 @@ body {
 }
 
 .advantages-white {
-
+  grid-column: 1/-1;
   margin: 0;
 }
 
@@ -606,12 +605,13 @@ body {
 }
 
 .hotel-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
   list-style: none;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
   margin-bottom: 80px;
 }
 
@@ -623,8 +623,7 @@ body {
   outline: #82B3D3 solid 2px;
   background-color: #FFFFFF;
   padding: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+
 
 
 }
