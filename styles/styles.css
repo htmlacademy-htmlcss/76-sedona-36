@@ -210,6 +210,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 385px 385px 385px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -223,8 +224,7 @@ body {
 
 .advantages-item {
   background-color: #82B3D3;
-  width: 400px;
-  padding: 85px 112px;
+  padding: 112px 85px;
 
 
 }
@@ -288,7 +288,9 @@ body {
 }
 
 .facilities-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 385px;
   margin: 0;
   list-style: none;
   padding: 0;
@@ -357,7 +359,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
-  margin-top: 0;
+  margin: 0;
 
 }
 
@@ -607,9 +609,9 @@ body {
 .hotel-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
+  grid-template-rows: 438px 438px;
   gap: 20px;
   list-style: none;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
@@ -698,25 +700,38 @@ body {
   padding: 0;
 }
 
-.pagination-item {
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+
+
+.pagination-dots {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 16px 22px;
+}
+
+.pagination-link {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   background-color: #82B3D3;
   text-transform: uppercase;
-  margin-right: 8px;
+  width: 60px;
+  height: 60px;
+  display: block;
   padding: 12px 24px;
-
-}
-
-.pagination-dots {
-  background-color: #FFFFFF;
-  color: #000000;
-}
-
-.pagination-link {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+
+.button-ten>.pagination-link{
+  padding: 12px 18px;
+
+
 }
 
 .pagination-current {
