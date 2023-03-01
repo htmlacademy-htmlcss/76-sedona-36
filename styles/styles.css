@@ -72,8 +72,55 @@ body {
 .navigation-user {
   max-width: 268px;
   margin-left: auto;
+
 }
 
+.navigation-link {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+  text-transform: capitalize;
+  padding: 20px 16px;
+
+}
+
+.navigation-user .navigation-item:nth-child(2){
+  margin-right: 20px;
+}
+
+.navigation-link.button{
+border-radius: 4px;
+
+}
+
+.navigation-link-user {
+  padding: 12px 22px;
+
+
+}
+.navigation-link-search{
+  background-image: url('../images/search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+.navigation-link-like{
+  background-image: url('../images/favourite.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+.navigation-user .navigation-list {
+  min-width: 20px;
+  min-height: 20px;
+
+
+
+}
 
 
 
@@ -98,8 +145,11 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #756157;
+  border: none;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .newsletter-button {
@@ -117,31 +167,6 @@ body {
 
 }
 
-.navigation-link {
-  display: block;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #000000;
-  text-transform: capitalize;
-  padding: 20px 16px;
-
-}
-
-.navigation-link-user {
-  padding: 22px 12px;
-  outline: #756157 1px solid;
-
-
-}
-
-.navigation-user .navigation-list {
-  min-width: 20px;
-  min-height: 20px;
-
-
-}
 
 .hotel-card-button-favorite {
   background-color: #82B3D3;
@@ -178,12 +203,15 @@ body {
 }
 
 .promo {
-  background-image: url("../images/index-background.jpg");
+  background-image: url('../images/Divider.svg'), url("../images/index-background.jpg");
+  background-position: bottom;
   background-color: #756157;
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
+
+
 }
 
 .advantages-promo {
@@ -393,6 +421,11 @@ body {
   align-items: center;
   padding: 96px 304px;
 }
+.button-search,.newsletter-button{
+ padding: 8px 50px;
+ border-radius: 4px;
+
+}
 
 .contacts {
   display: flex;
@@ -409,13 +442,66 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 2px solid red;
 
+
+}
+.social-vk{
+  background-image: url('../images/social-vk-default.svg');
+  background-position: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  padding: 12px 13px;
+  display: block;
+}
+.social-vk:hover{
+  background-image: url('../images/social-vk-hover.svg');
+  background-position: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  padding: 12px 13px;
+  display: block;
+
+}
+.social-vk:focus{
+  background-image: url('../images/social-vk-focus.svg');
+  background-position: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  padding: 12px 13px;
+  display: block;
+}
+.social-vk:active{
+  background-image: url('../images/social-vk-active.svg');
+  background-position: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  padding: 12px 13px;
+  display: block;
+
+}
+.social-tg{
+  background-image: url('../images/social-telegram-default.svg');
+  background-position: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  padding: 12px 14px;
+  background-size: 18px 16px;
+  display: block;
+
+}
+.social-youtube{
+  background-image: url('../images/social-youtube-default.svg');
+  background-position: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 12px 13px;
 
 }
 
 .footer-social-item {
   padding: 12px 13px;
+
 
 }
 
@@ -427,6 +513,10 @@ body {
 
 .footer-logo {
   width: 115px;
+}
+.footer-logo-svg:hover {
+  fill: #756157;
+
 }
 
 .page-footer-title {
