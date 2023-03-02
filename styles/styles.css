@@ -1109,3 +1109,10 @@ color: #756157;
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
+.catalog-filter-clear:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-clear:active{
+  color: rgba(255, 255, 255, 0.3);
+}
