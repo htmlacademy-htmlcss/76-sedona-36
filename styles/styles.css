@@ -167,6 +167,10 @@ border-radius: 4px;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
+.button:disabled{
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
 
 .newsletter-button {
   background-color: #82B3D3;
@@ -184,16 +188,12 @@ border-radius: 4px;
 }
 
 
-.hotel-card-button-favorite {
-  background-color: #82B3D3;
-  font-size: 16px;
-  line-height: 20px;
-}
 
 .hotel-card-button {
   background-color: #756157;
   font-size: 16px;
   line-height: 20px;
+
 }
 
 .catalog-filter-clear {
@@ -705,37 +705,38 @@ color: #756157;
   position: relative;
 }
 .breadcrumbs-item:nth-child(1){
-  padding-right: 36px;
+  padding-right: 49px;
 }
+
 
 .breadcrumbs-main{
-  background-image:url("../images/catalog-images/breadcrumbs-home.svg");
-  background-repeat: no-repeat;
+
   padding: 7px 8px;
   position: absolute;
+  top: -6px;
   left: 0;
-  top: 3px;
-  bottom: 3px;
   background-position: center;
   transition: all 0.3s ease;
+  display: block;
 
 }
-.breadcrumbs-main:hover{
-color: rgba(255, 255, 255, 0.6);
+.breadcrumbs-main:hover svg path{
+fill: rgba(255, 255, 255, 0.6);
 }
-.breadcrumbs-main:focus{
+.breadcrumbs-main:focus svg path{
+  fill: #FFFFFF;
+}
+.breadcrumbs-main:active svg path{
+fill: rgba(255, 255, 255, 0.3);
+}
 
-}
-.breadcrumbs-main:active{
-
-}
 
 .breadcrumbs-item::before{
   background-image: url("../images/catalog-images/Arrow.svg");
   background-repeat: no-repeat;
   padding: 5px 4px;
   position: absolute;
-  left: 23px;
+  left: 32px;
   top: 3px;
   bottom: 3px;
   background-position: center;
@@ -970,6 +971,7 @@ color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  min-width: 140px;
 }
 
 .hotel-card-row .button{
@@ -984,11 +986,6 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 
-.hotel-card-button-favorite {
-  padding: 0;
-  margin: 0;
-
-}
 
 .stars {
   padding: 0;
@@ -1097,4 +1094,27 @@ border: solid 2px #83B3D3;
 
 .catalog-filter-clear:active{
   color: rgba(255, 255, 255, 0.3);
+}
+.hotel-card-button-favorite {
+  background-color: #82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+.hotel-card-button-favorite-checked{
+  background-color: #7DB54F;
+}
+.hotel-card-button-favorite-checked:hover{
+  background-color: #6C9E42;
+}
+.hotel-card-button-favorite-checked:focus{
+  background-color: #6C9E42;
+}
+.hotel-card-button-favorite-checked:active{
+  background-color: #7DB54F;
+}
+.hotel-card-button-favorite-checked:disabled{
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
