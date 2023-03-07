@@ -972,6 +972,7 @@ fill: rgba(255, 255, 255, 0.3);
   padding: 0;
   margin: 0;
   min-width: 140px;
+  cursor:default;
 }
 
 .hotel-card-row .button{
@@ -1070,6 +1071,10 @@ fill: rgba(255, 255, 255, 0.3);
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
+.button-brown:disabled{
+  background-color: #E5E5E5;
+  color:#FFFFFF;
+}
 .button-blue{
   transition: all 0.3s ease;
 }
@@ -1082,6 +1087,10 @@ fill: rgba(255, 255, 255, 0.3);
 .button-blue:active{
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+.button-blue:disabled{
+  background-color: #E5E5E5;
+  color:#FFFFFF;
 }
 .catalog-filter-clear:hover{
   color: rgba(255, 255, 255, 0.6);
