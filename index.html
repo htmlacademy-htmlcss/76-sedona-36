@@ -248,6 +248,43 @@
 
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group user-search-modal">
+              <label class="label-title date" for="date-checkin">Дата Заезда:</label>
+              <input class="modal-search-form-field" type="text" id="date-checkin" name="date-checkin"
+                placeholder="27 апреля 2020">
+            </p>
+            <p class="field-group user-search-modal">
+              <label class="label-title date" for="date-checkout">Дата Выезда:</label>
+              <input class="modal-search-form-field" type="text" id="date-checkout" name="date-checkout"
+                placeholder="1 сентября 2023">
+            </p>
+            <div class="user-age">
+              <p class="field-group">
+                <label class="label-title adults" for="adults">Взрослые:</label>
+                <input class="modal-search-form-field field-age" type="number" id="adults" name="adults"
+                  placeholder="2">
+              </p>
+              <p class="field-group">
+                <label class="label-title kids" for="kids">Дети:</label>
+                <input class="modal-search-form-field field-age" type="number" id="kids" name="kids" placeholder="2">
+              </p>
+            </div>
+            <a class="button search-form-button" href="#">Найти</a>
+          </form>
+        </section>
+      </div>
+
+
+    </div>
 
   </body>
 
