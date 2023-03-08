@@ -1253,8 +1253,9 @@ border: solid 2px #83B3D3;
   padding: 0;
   margin: 0;
 }
-.hotel-card-button-favorite-checked{
+.hotel-card-row .hotel-card-button-favorite-checked{
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 .hotel-card-button-favorite-checked:hover{
   background-color: #6C9E42;
