@@ -888,7 +888,11 @@ left: 0;
   border: none;
   font-family: 'PT Sans', 'Arial', sans-serif;
 }
-
+.input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
 
 .catalog-filter-title {
   font-size: 20px;
