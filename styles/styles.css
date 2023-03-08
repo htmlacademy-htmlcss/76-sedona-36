@@ -675,6 +675,10 @@ color: #756157;
 }
 .newsletter-description{
   margin-top: 0;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 54px;
+  padding: 0 120px;
 }
 .catalog {
   background-image: url("../images/catalog-images/inner-header.png");
@@ -758,9 +762,130 @@ fill: rgba(255, 255, 255, 0.3);
   border: 0;
   margin-right: 70px;
 }
+.catalog-filter-group:nth-child(2){
+  margin-right: 140px;
+}
 
-.catalog-filter-group:nth-child(2) {
-  margin-right: 0;
+
+.control{
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.control:hover .control-mark {
+  background-color:  #C9DAE8;
+}
+.control:focus .control-mark {
+  outline:solid 2px #83B3D3;
+}
+.control:active .control-mark {
+  background-color: #96A9BC;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  background-image: url("../images/catalog-images/Checkbox.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  color: #3F5E72;
+  content: "";
+}
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+
+}
+.cost{
+  max-width: 288px;
+}
+.range-wrapper-inputs{
+  margin-bottom: 36px;
+}
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #61696C;
+
+}
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.toggle-min{
+top: -8px;
+left: 0;
+}
+.toggle-max{
+  top: -8px;
+  right: 0;
+}
+.range-wrapper-inputs {
+  display: flex;
+  height: 48px;
+  position: relative;
+
+}
+.range-wrapper-inputs label{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 12px 20px;
+  background-color: #F2F2F2;
+
+}
+.min-price {
+  margin-right: 2px;
+  border-radius: 4px 0 0 4px;
+}
+.max-price{
+  border-radius: 0 4px 4px 0;
+}
+.range-wrapper-inputs input {
+  width: calc(100% - 30px);
+  font-weight: 700;
+  color: #000000;
+  padding: 0;
+  background: none;
+  margin: 0;
+  border: none;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 
@@ -894,6 +1019,28 @@ fill: rgba(255, 255, 255, 0.3);
 }
 .select-control {
   margin-right: 70px;
+  padding: 14px 20px;
+  padding-right: 128px;
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url("../images/catalog-images/arrow-control.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+}
+.select-control:hover{
+  border-color: #68A2CA;
+}
+.select-control:focus{
+  border-color: #68A2CA;
+}
+.select-control:active{
+  border-color: #3F5E72;
+}
+.select-control:disabled{
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotels-sorting {
@@ -1049,12 +1196,6 @@ fill: rgba(255, 255, 255, 0.3);
   color: #000000;
 }
 
-.newsletter-description {
-  color: #333333;
-  text-align: center;
-}
-
-
 .catalog-filter-list {
   width: 150px;
   margin: 0;
@@ -1126,4 +1267,24 @@ border: solid 2px #83B3D3;
 .hotel-card-button-favorite-checked:disabled{
   background-color: #E5E5E5;
   color: #FFFFFF;
+}
+.field{
+  padding: 8px 20px;
+  padding-right: 250px;
+  border-radius: 4px;
+  border: none;
+}
+.newsletter-form-catalog .field {
+  background-color: #F2F2F2;
+}
+.newsletter-form{
+  display: flex;
+}
+.newsletter-email{
+margin: 0;
+flex-grow: 1;
+}
+.newsletter-email .field{
+  width: 452px;
+
 }
