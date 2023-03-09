@@ -262,20 +262,37 @@
               <input class="modal-search-form-field" type="text" id="date-checkin" name="date-checkin"
                 placeholder="27 апреля 2020">
             </p>
+            <span class="modal-description">Мы не можем отправить вас в прошлое</span>
             <p class="field-group user-search-modal">
               <label class="label-title date" for="date-checkout">Дата Выезда:</label>
               <input class="modal-search-form-field" type="text" id="date-checkout" name="date-checkout"
                 placeholder="1 сентября 2023">
             </p>
+            <span class="modal-description-out">На эти даты есть свободные номера. Пока есть.</span>
             <div class="user-age">
               <p class="field-group">
                 <label class="label-title adults" for="adults">Взрослые:</label>
                 <input class="modal-search-form-field field-age" type="number" id="adults" name="adults"
                   placeholder="2">
+                <button class="age-counter-minus">
+
+                  <span class="visually-hidden">Убрать</span>
+                </button>
+                <button class="age-counter-plus">
+                  <span class="visually-hidden">Добавить</span>
+
+                </button>
               </p>
               <p class="field-group">
                 <label class="label-title kids" for="kids">Дети:</label>
                 <input class="modal-search-form-field field-age" type="number" id="kids" name="kids" placeholder="2">
+                <button class="age-counter-minus">
+                  <span class="visually-hidden">Убрать</span>
+                </button>
+                <button class="age-counter-plus">
+                  <span class="visually-hidden">Добавить</span>
+
+                </button>
               </p>
             </div>
             <a class="button search-form-button" href="#">Найти</a>
