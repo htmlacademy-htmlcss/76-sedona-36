@@ -187,6 +187,7 @@ body {
   background-color: #82B3D3;
   font-size: 16px;
   line-height: 20px;
+  outline: none;
 }
 
 .page-header {
@@ -525,31 +526,19 @@ body {
 
 .social-vk:hover {
   background-image: url('../images/social-vk-hover.svg');
-  background-position: center;
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  padding: 12px 13px;
-  display: block;
+
 
 
 }
 
 .social-vk:focus {
   background-image: url('../images/social-vk-focus.svg');
-  background-position: center;
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  padding: 12px 13px;
-  display: block;
+
+  outline: none;
 }
 
 .social-vk:active {
   background-image: url('../images/social-vk-active.svg');
-  background-position: center;
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  padding: 12px 13px;
-  display: block;
 
 }
 
@@ -573,6 +562,7 @@ body {
 
 .social-tg:focus {
   background-image: url('../images/social-telegram-focus.svg');
+  outline: none;
 
 
 }
@@ -602,6 +592,7 @@ body {
 
 .social-youtube:focus {
   background-image: url('../images/social-youtube-focus.svg');
+  outline: none;
 
 
 }
@@ -635,8 +626,9 @@ body {
   fill: #756157;
 }
 
-.footer-logo-academy:focus svg path {
+.footer-logo-academy:focus svg path,.footer-logo-academy:focus {
   fill: #756157;
+  outline: none;
 }
 
 .footer-logo-academy:active svg path {
@@ -678,6 +670,7 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   transition: all 0.3s ease;
+
 }
 
 .footer-contacts-phone:hover {
@@ -686,6 +679,7 @@ body {
 
 .footer-contacts-phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-contacts-phone:active {
@@ -823,16 +817,16 @@ body {
   background-color: #FFFFFF;
 }
 
-.control:hover .control-mark {
-  background-color: #C9DAE8;
+.control:hover {
+  opacity: 0.6;
 }
 
 .control:focus .control-mark {
   outline: solid 2px #83B3D3;
 }
 
-.control:active .control-mark {
-  background-color: #96A9BC;
+.control:active {
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
@@ -864,7 +858,9 @@ body {
   content: "";
 
 }
-
+.range-input{
+  outline: none;
+}
 .cost {
   max-width: 288px;
 }
@@ -946,6 +942,9 @@ body {
   margin-right: 2px;
   border-radius: 4px 0 0 4px;
 }
+.min-price:hover,.max-price:hover{
+  background-color: #E6E6E6;;
+}
 
 .min-price:focus {
   outline: solid 3px #83B3D3;
@@ -985,6 +984,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 32px;
 }
 
+
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -1015,6 +1015,7 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .viewchange {
@@ -1059,6 +1060,7 @@ input::-webkit-inner-spin-button {
   background-image: url("../images/catalog-images/icon-gallery.svg");
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .button-gallery:hover {
@@ -1197,6 +1199,9 @@ input::-webkit-inner-spin-button {
   margin-bottom: 16px;
 
 }
+.hotel-card-link:focus{
+  outline: none;
+}
 
 .hotel-card-image {
   margin-bottom: 16px;
@@ -1310,7 +1315,9 @@ input::-webkit-inner-spin-button {
   padding: 0;
   list-style: none;
 }
-
+.button-brown{
+  outline: none;
+}
 .button-brown:hover {
   background-color: #615048;
 }
@@ -1331,6 +1338,7 @@ input::-webkit-inner-spin-button {
 
 .button-blue {
   transition: all 0.3s ease;
+  outline: none;
 }
 
 .button-blue:hover {
@@ -1406,6 +1414,13 @@ input::-webkit-inner-spin-button {
 .newsletter-form-catalog .field {
   background-color: #F2F2F2;
 }
+.newsletter-form .field:hover{
+  background-color: #E6E6E6;
+}
+.newsletter-form .field:focus{
+  background-color: #E6E6E6;
+  outline: solid 3px #83B3D3;
+}
 
 .newsletter-form {
   display: flex;
@@ -1424,6 +1439,8 @@ input::-webkit-inner-spin-button {
 .modal-container {
   position: fixed;
   display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -1432,13 +1449,12 @@ input::-webkit-inner-spin-button {
 
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 .modal {
   position: relative;
   padding: 64px 70px;
-  margin: auto;
   background-color: #FFFFFF;
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -1459,23 +1475,26 @@ input::-webkit-inner-spin-button {
   background-color: #F2F2F2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/modal-close-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 .modal-close-button:hover{
   background-color: #E6E6E6;
 }
-.modal-close-button:active{
+.modal-close-button:active svg path{
   background-color: #E6E6E6;
-  opacity: 0.3;
+  fill: rgba(0, 0, 0, 0.3);
+}
+.modal-close-button:focus{
+  background-color: #E6E6E6;
+  outline: solid 3px #83B3D3;
+
 }
 .modal-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 64px;
 }
 
@@ -1503,7 +1522,14 @@ input::-webkit-inner-spin-button {
 .modal-search-form-field:hover{
   background-color: #E6E6E6;
 }
-
+.modal-search-form-field:focus{
+  background-color: #E6E6E6;
+  outline: solid 3px #83B3D3;
+}
+.modal-search-form-field:active{
+  background-color: #F2F2F2;
+  outline: solid 2px #000000;
+}
 .field-age {
   width: 110px;
   text-align: center;
@@ -1511,7 +1537,7 @@ input::-webkit-inner-spin-button {
 
 .modal-search-form .field-group {
   margin: 0;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 
 }
 
@@ -1524,7 +1550,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+
 }
 
 .adults {
@@ -1555,13 +1581,14 @@ input::-webkit-inner-spin-button {
   padding: 18px 256px;
   display: block;
   background-color: #83B3D3;
+  outline: none;
 }
 
 .date::before {
   background-image: url("../images/modal-calendar.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
   right: 17px;
   width: 20px;
@@ -1583,7 +1610,7 @@ input::-webkit-inner-spin-button {
   width: 20px;
   height: 20px;
   right: 80px;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
   border: none;
   cursor: pointer;
@@ -1599,7 +1626,7 @@ input::-webkit-inner-spin-button {
   width: 20px;
   height: 20px;
   right: 13px;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
   border: none;
   cursor: pointer;
@@ -1642,7 +1669,7 @@ input::-webkit-inner-spin-button {
 }
 .tooltip{
   position: absolute;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
   left: 58px;
   width: 26px;

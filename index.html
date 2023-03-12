@@ -167,7 +167,7 @@
           <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
               id="newsletter-email" required>
             <button class="button newsletter-button button-blue" type="submit">
               Подписаться
@@ -251,6 +251,9 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black"/>
+            </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -259,14 +262,14 @@
 
             <p class="field-group user-search-modal">
               <label class="label-title date" for="date-checkin">Дата Заезда:</label>
-              <input class="modal-search-form-field" type="text" id="date-checkin" name="date-checkin"
-                placeholder="27 апреля 2020">
+              <input class="modal-search-form-field" type="text" value="27 апреля 2020"  id="date-checkin" name="date-checkin"
+                placeholder="Укажите дату">
             </p>
             <span class="modal-description">Мы не можем отправить вас в прошлое</span>
             <p class="field-group user-search-modal">
               <label class="label-title date" for="date-checkout">Дата Выезда:</label>
-              <input class="modal-search-form-field" type="text" id="date-checkout" name="date-checkout"
-                placeholder="1 сентября 2023">
+              <input class="modal-search-form-field" type="text" value="1 сентября 2023" id="date-checkout" name="date-checkout"
+                placeholder="Укажите дату">
             </p>
             <span class="modal-description-out">На эти даты есть свободные номера. Пока есть.</span>
             <div class="user-age">
@@ -315,7 +318,7 @@
 
 
     </div>
-
+   <script src="js/modal.js"></script>
   </body>
 
 </html>
