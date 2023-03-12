@@ -75,20 +75,24 @@
                 <ul class="catalog-filter-list catalog-infrastructure">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
+
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -101,24 +105,54 @@
                 <ul class="catalog-filter-list catalog-house">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="hotels" checked>
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="hotels" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="motels">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="motels">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="appartments">
-                      Аппартаменты
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="appartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Аппартаменты</span>
                     </label>
                   </li>
                 </ul>
 
+              </fieldset>
+              <fieldset class="catalog-filter-group cost">
+                <legend class="catalog-filter-title">Стоимость, Р:</legend>
+
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label min-price">
+                      <input class="range-input" type="number" value="0" name="min-price">
+                      <span>от</span>
+                    </label>
+                    <label class="catalog-filter-label max-price">
+                      <input class="range-input" type="number" value="9000" name="max-price">
+                      <span>до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
               </fieldset>
               <ul class="catalog-buttons">
                 <li class="catalog-buttons-item">
@@ -173,7 +207,7 @@
                 </div>
                 <div class="hotel-card-row">
                   <p class="stars four-stars">
-                    <img class="stars four-stars" src="images/catalog-images/four-stars.svg" width="140" height="37"
+                    <img class="stars four-stars" src="images/catalog-images/four-stars.svg" width="140" height="36"
                       alt="4 звезды">
                   </p>
                   <p class="hotel-rating button"> Рейтинг: 8.5 </p>
@@ -197,7 +231,7 @@
                 </div>
                 <div class="hotel-card-row">
                   <p class="stars four-stars">
-                    <img class="stars four-stars" src="images/catalog-images/four-stars.svg" width="140" height="37"
+                    <img class="stars four-stars" src="images/catalog-images/four-stars.svg" width="140" height="36"
                       alt="4 звезды">
                   </p>
                   <p class="hotel-rating button"> Рейтинг: 9.2 </p>
@@ -219,7 +253,7 @@
                 </div>
                 <div class="hotel-card-row">
                   <p class="stars three-stars">
-                    <img class="stars three-stars" src="images/catalog-images/three-star.svg" width="140" height="37"
+                    <img class="stars three-stars" src="images/catalog-images/three-star.svg" width="140" height="36"
                       alt="3 звезды">
                   </p>
                   <p class="hotel-rating button"> Рейтинг: 6.9 </p>
@@ -241,7 +275,7 @@
                 </div>
                 <div class="hotel-card-row">
                   <p class="stars two-stars">
-                    <img class="stars two-stars" src="images/catalog-images/two-star.svg" width="140" height="37"
+                    <img class="stars two-stars" src="images/catalog-images/two-star.svg" width="140" height="36"
                       alt="2 звезды">
                   </p>
                   <p class="hotel-rating button"> Рейтинг: 5.0 </p>
@@ -274,9 +308,9 @@
         <section class="newsletter background-color">
           <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="newsletter-form newsletter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
               id="newsletter-email" required>
             <button class="button newsletter-button button-blue" type="submit">
               Подписаться
