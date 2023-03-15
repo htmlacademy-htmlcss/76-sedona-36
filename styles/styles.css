@@ -573,17 +573,18 @@ body {
   transition: all 0.3s ease;
 }
 
-.footer-logo-academy:hover svg path {
+.footer-logo-academy:hover path{
   fill: #756157;
 }
 
-.footer-logo-academy:focus svg path,
-.footer-logo-academy:focus {
+.footer-logo-academy:focus path {
   fill: #756157;
+}
+.footer-logo-academy:focus{
   outline: none;
 }
 
-.footer-logo-academy:active svg path {
+.footer-logo-academy:active path{
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -701,15 +702,15 @@ body {
   display: block;
 }
 
-.breadcrumbs-main:hover svg path {
+.breadcrumbs-main:hover path{
   fill: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-main:focus svg path {
+.breadcrumbs-main:focus path {
   fill: #FFFFFF;
 }
 
-.breadcrumbs-main:active svg path {
+.breadcrumbs-main:active path{
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -745,6 +746,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .catalog-filter-group {
@@ -861,6 +863,8 @@ body {
   position: absolute;
   height: 4px;
   background-color: #FFFFFF;
+  left: 0;
+  width: 226px;
 }
 
 .range-toggle {
@@ -1503,7 +1507,7 @@ input::-webkit-inner-spin-button {
   background-color: #E6E6E6;
 }
 
-.modal-close-button:active svg path {
+.modal-close-button:active path {
   background-color: #E6E6E6;
   fill: rgba(0, 0, 0, 0.3);
 }
